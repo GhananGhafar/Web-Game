@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ganan/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="ganan/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>GG Store</title>
+    <style>
+   footer{
+    background-color: grey;
+    
+   }
+   body {
+  margin:0;
+  padding:0;
+  background:#ccc;
+  font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+.content ul {
+  position:relative;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  display:flex;
+  margin:0;
+  padding:0;
+}
+
+.content ul li {
+  list-style:none;
+  margin:0 5px;
+}
+
+.content li a .fa {
+  font-size: 40px;
+  color: #262626;
+  line-height:80px;
+  transition: .5s;
+  padding-right: 14px;
+}
+
+.content li a span {
+  padding:0;
+  margin:0;
+  position:absolute;
+  top: 30px;
+  color: #262626;
+  letter-spacing: 4px;
+  transition: .5s;
+}
+
+.content li a {
+  text-decoration: none;
+  display:contents;
+  display:block;
+  width:210px;
+  height:80px;
+  background: #fff;
+  text-align:left;
+  padding-left: 20px;
+  /* transform: rotate(-30deg) skew(25deg) translate(0,0); */
+  transition:.5s;
+  box-shadow: -20px 20px 10px rgba(0,0,0,.5);
+}
+.content li a:before {
+  content: '';
+  position: absolute;
+  top:10px;
+  left:-20px;
+  height:100%;
+  width:20px;
+  background: #b1b1b1;
+  transform: .5s;
+  transform: rotate(0deg) skewY(-45deg);
+}
+.content li a:after {
+  content: '';
+  position: absolute;
+  bottom:-20px;
+  left:-10px;
+  height:20px;
+  width:100%;
+  background: #b1b1b1;
+  transform: .5s;
+  transform: rotate(0deg) skewX(-45deg);
+}
+
+.content li a:hover {
+  transform: rotate(-30deg) skew(25deg) translate(20px,-15px);
+  box-shadow: -50px 50px 50px rgba(0,0,0,.5);
+}
+
+.content li:hover .fa {
+  color:#fff;
+}
+
+.content li:hover span {
+  color:#fff;
+}
+
+.content li:hover:nth-child(1) a{
+  background: #3b5998;
+}
+.content li:hover:nth-child(1) a:before{
+  background: #365492;
+}
+.content li:hover:nth-child(1) a:after{
+  background: #4a69ad;
+}
+
+.content li:hover:nth-child(2) a{
+  background: #00aced;
+}
+.content li:hover:nth-child(2) a:before{
+  background: #097aa5;
+}
+.content li:hover:nth-child(2) a:after{
+  background: #53b9e0;
+}
+
+.content li:hover:nth-child(3) a{
+  background: #dd4b39;
+}
+.content li:hover:nth-child(3) a:before{
+  background: #b33a2b;
+}
+.content li:hover:nth-child(3) a:after{
+  background: #e66a5a;
+}
+
+.content li:hover:nth-child(4) a{
+  background: #e4405f;
+}
+.content li:hover:nth-child(4) a:before{
+  background: #d81c3f;
+}
+.content li:hover:nth-child(4) a:after{
+  background: #e46880;
+}
+
+.about a:hover{
+  color: green;
+}
+.about a{
+  color: white;
+}
+.btn{
+  margin-left: 60px;
+}
+.btn1{
+ 
+  border: 2px solid grey;
+  border-radius: 1rem;
+}
+.btn2{
+ 
+  border: 2px solid grey;
+  border-radius: 1rem;
+}
+.btn3{
+ 
+  border: 2px solid grey;
+  border-radius: 1rem;
+}
+.btn4{
+ 
+  border: 2px solid grey;
+  border-radius: 1rem;
+}
+
+.btn1:hover{
+  transition: 1s;
+  transform: scale(1.2);
+}
+.btn2:hover{
+  transition: 1s;
+  transform: scale(1.2);
+}
+.btn3:hover{
+  transition: 1s;
+  transform: scale(1.2);
+}
+.btn4:hover{
+  transition: 1s;
+  transform: scale(1.2);
+}
+
+/* .btn:hover{
+  background-color: grey;
+} */
+    </style>
+    
+</head>
+<body>
+ 
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="javascript:void(0) "><img src="icons8-visual-paradigm-100.png" alt=""> </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#card">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://policies.google.com/privacy">Privacy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://developer.android.com/">Lainnya</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="text" placeholder="Search">
+              <button class="btn btn-primary" type="button">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <h1 style="text-align: center; font-weight: bolder; font-family: 'Poppins'; background-color:antiquewhite;">GG STORE</h1>
+      
+<div class="btn">
+
+
+        <button class="btn1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tv" viewBox="0 0 16 16">
+          <path d="M2.5 13.5A.5.5 0 0 1 3 13h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5M13.991 3l.024.001a1.5 1.5 0 0 1 .538.143.76.76 0 0 1 .302.254c.067.1.145.277.145.602v5.991l-.001.024a1.5 1.5 0 0 1-.143.538.76.76 0 0 1-.254.302c-.1.067-.277.145-.602.145H2.009l-.024-.001a1.5 1.5 0 0 1-.538-.143.76.76 0 0 1-.302-.254C1.078 10.502 1 10.325 1 10V4.009l.001-.024a1.5 1.5 0 0 1 .143-.538.76.76 0 0 1 .254-.302C1.498 3.078 1.675 3 2 3zM14 2H2C0 2 0 4 0 4v6c0 2 2 2 2 2h12c2 0 2-2 2-2V4c0-2-2-2-2-2"/>
+        </svg > <a href="index2.html" style="text-decoration: none; color: grey;">TV</a></button>
+        <button class="btn2"><i class="bi bi-phone"></i> <a href="index3.html" style="text-decoration:none ; color: grey;">Handphone</a></button>
+        <button class="btn3"><i class="bi bi-tablet"></i> <a href="index4.html"  style="text-decoration:none ; color: grey;">Tablet</a></button>
+        <button class="btn4"><i class="bi bi-display"></i><a href="index5.html" style="text-decoration:none ; color: grey;"> PC</a></button>
+      </div>
+      
+      <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" daata-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+
+  <!-- The slideshow/carousel -->
+   <div class="container">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://wallpapercave.com/wp/wp4284775.jpg" alt="Mobile Legend" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="https://dailymetadose.com/wp-content/uploads/2022/10/stumble-guys-cover.jpg" alt="Stumbel guys" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.tipspintar.com/wp-content/uploads/2018/11/Wallpaper-Free-Fire.jpg" alt="Free Fire" class="d-block w-100">
+    </div>
+  </div>
+</div>
+`
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>  
+<br>
+<!-- card -->
+ <div class="row" style="margin-left: 50px;" id="card">
+<div class="card" style="width:450px">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/NieS-9Nsl4E?si=TwB6k3jtRJUmjzU8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <div class="card-body">
+    <h4 class="card-title">Mobile Legends</h4>
+    <p class="card-text"><i>Tekan untuk lebih lanjut</i>t</p>
+    <a href="https://play.google.com/store/search?q=mobile%20legends&c=apps" class="btn btn-primary">See Games</a>
+  </div>
+</div>
+<br>
+<div class="card" style="width:450px" >
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/ZulZ-TSu0bY?si=KMMjMhHbRm7Q1Ds0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <div class="card-body">
+    <h4 class="card-title">Stumbel Guys</h4>
+    <p class="card-text"> <i>Tekan untuk lebih lanjut</i></p>
+    <a href="https://play.google.com/store/apps/details?id=com.kitkagames.fallbuddies" class="btn btn-primary">See Games</a>
+  </div>
+</div>
+<br>
+<div class="card" style="width:450px">
+  <iframe width="423" height="315" src="https://www.youtube.com/embed/ef5EKAY_AL0?si=jyfYGbyOB4ddTA1X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
+  <div class="card-body">
+    <h4 class="card-title">Free Fire</h4>
+    <p class="card-text"><i>Tekan untuk lebih lanjut</i></p>
+    <a href="https://play.google.com/store/search?q=free%20fire&c=apps" class="btn btn-primary">See Games</a>
+  </div>
+</div>
+</div>
+<br>
+<!-- <div class="container" style="width: 500px; height: 500px; float: left; margin-left: 20px;"> -->
+  
+  <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+
+  <!-- The slideshow/carousel -->
+  <div class="container"  >
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://gamerwk.sgp1.cdn.digitaloceanspaces.com/2023/03/honor-of-kings.jpg" alt="Honor honor-of-kings" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="https://i.pinimg.com/originals/29/be/50/29be50d4fe20d3aa870e59c2e7f8c648.jpg" alt="Pubg" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="https://4.bp.blogspot.com/-FHd8B1UcGuA/Wey_xo6fpsI/AAAAAAAAKiE/QW1bOdx87JgSrrWh_4B6QiJcSA-aWadJQCLcBGAs/s1600/minecraft%2Bimage.jpg" alt="New York" class="d-block w-100">
+    </div>
+  </div>
+  </div>
+
+  <!-- Left and right controls/icons -->
+   
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<br>
+<div class="row" style="margin-left: 50px;">
+
+<div class="row">
+
+  <div class="card" style="width:450px;" >
+    <iframe width="450" height="315" src="https://www.youtube.com/embed/wqx7qhiU9Nk?si=DittTfeI8Rg6YoHR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="card-body">
+      <h4 class="card-title">Call Of Duty</h4>
+      <p class="card-text"><i>Tekan  lebih lanjut</i></p>
+    <a href="https://play.google.com/store/search?q=cod&c=apps" class="btn btn-primary">See Games</a>
+  </div>
+</div>
+<div class="card" style="width:450px;" >
+  <iframe width="480" height="315" src="https://www.youtube.com/embed/PaJ4krmiNRg?si=4VD2i87m-Xg-R0Lp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <div class="card-body">
+    <h4 class="card-title">Babybus</h4>
+    <p class="card-text"><i>Tekan lebih lanjut</i></p>
+    <a href="https://play.google.com/store/apps/details?id=com.sinyee.babybus.world&hl=en_US" class="btn btn-primary">See Game</a>
+  </div>
+</div>
+<div class="card" style="width:450px;" >
+  <iframe width="423" height="315" src="https://www.youtube.com/embed/EdF2sJR6GeU?si=hzzGZNkOYVA4UX4G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <div class="card-body">
+    <h4 class="card-title">Pou</h4>
+    <p class="card-text"><i>Tekan lebih lanjut</i></p>
+    <a href="https://play.google.com/store/search?q=cod&c=apps" class="btn btn-primary">See game</a>
+  </div>
+</div>
+</div>
+</div>
+  <br><br>
+  <div class="mt-4 p-5 bg-dark text-white rounded">
+    <h1></h1>
+  <p></p>
+    <footer>
+ <div class="content">
+      
+    
+   <style>
+     @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400');
+     </style>
+     <ul>
+       <li>
+         <a href="https://web.facebook.com/facebook/?_rdc=1&_rdr">
+           <i class="fa fa-facebook" aria-hidden="true"></i>
+           <span> - Facebook</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://x.com/byu_id">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <span> - Twitter</span>
+          </a>
+        </li>
+        <li>
+         <a href="https://play.google.com/store/games?hl=en_US">
+           <i class="fa fa-google-plus" aria-hidden="true"></i>
+           <span> - Google</span>
+          </a>
+        </li>
+        <li>
+         <a href="https://www.instagram.com/?hl=en">
+           <i class="fa fa-instagram" aria-hidden="true"></i>
+           <span> - Instagram</span>
+         </a>
+        </li>
+      <span style="margin-left: 200px;">
+        CopyRight &copy; Ghanan 2024
+      </span>
+      </div>
+      
+      
+    </footer>
+  </div>
+
+  <div class="about">
+    <a href="https://support.google.com/googleplay/answer/6034670?visit_id=638592897016651905-3460359847&p=about_play&rd=1" style="padding-right:50px; " >About GGstore </a>
+   <a href="https://store.google.com/regionpicker?playredirect=true" style="padding-right:50px; " > GGstore </a>
+   <a href="https://developer.android.com/index.html" style="padding-right:50px; " > Developer </a>
+   <a href="https://play.google.com/intl/en-US_id/about/play-terms/index.html" style="padding-right:50px;  " > Tems of Service </a>
+   
+  </div>
+   
+      
+
+</body>
+</html>
